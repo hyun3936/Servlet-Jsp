@@ -1,0 +1,14 @@
+127.0.0.1 - - [07/Dec/2023:11:56:21 +0900] "GET / HTTP/1.1" 404 808
+0:0:0:0:0:0:0:1 - - [07/Dec/2023:11:56:22 +0900] "GET /MustHaveJSP/HelloJSP.jsp HTTP/1.1" 200 236
+0:0:0:0:0:0:0:1 - - [07/Dec/2023:11:56:22 +0900] "GET /favicon.ico HTTP/1.1" 404 819
+0:0:0:0:0:0:0:1 - - [07/Dec/2023:12:00:13 +0900] "GET /MustHaveJSP/HelloJSP.jsp HTTP/1.1" 200 236
+0:0:0:0:0:0:0:1 - - [07/Dec/2023:12:00:21 +0900] "GET /MustHaveJSP/HelloJSP.jsp HTTP/1.1" 200 236
+127.0.0.1 - - [07/Dec/2023:12:42:07 +0900] "GET / HTTP/1.1" 404 808
+0:0:0:0:0:0:0:1 - - [07/Dec/2023:12:42:08 +0900] "GET /ServletStudy/servlet/edu.pnu.servlet.MyServlet01 HTTP/1.1" 404 864
+127.0.0.1 - - [07/Dec/2023:13:04:14 +0900] "GET / HTTP/1.1" 404 808
+0:0:0:0:0:0:0:1 - - [07/Dec/2023:13:04:14 +0900] "GET /ServletStudy/myservlet01 HTTP/1.1" 200 -
+0:0:0:0:0:0:0:1 - - [07/Dec/2023:13:07:40 +0900] "GET /ServletStudy/WEB-INF/classes/edu/pnu/servlet/MyServlet02.java HTTP/1.1" 404 722
+0:0:0:0:0:0:0:1 - - [07/Dec/2023:13:07:40 +0900] "GET /favicon.ico HTTP/1.1" 404 819
+127.0.0.1 - - [07/Dec/2023:13:07:50 +0900] "GET / HTTP/1.1" 404 808
+0:0:0:0:0:0:0:1 - - [07/Dec/2023:13:07:51 +0900] "GET /ServletStudy/myservlet02 HTTP/1.1" 200 94
+0:0:0:0:0:0:0:1 - - [07/Dec/2023:13:07:51 +0900] "GET /favicon.ico HTTP/1.1" 404 819
