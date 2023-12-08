@@ -1,0 +1,52 @@
+package edu.pnu.servlet;
+
+import java.io.IOException;
+import java.io.PrintWriter;
+
+import jakarta.servlet.ServletException;
+import jakarta.servlet.annotation.WebServlet;
+import jakarta.servlet.http.HttpServlet;
+import jakarta.servlet.http.HttpServletRequest;
+import jakarta.servlet.http.HttpServletResponse;
+
+@WebServlet("/Gugudan2")
+public class Gugudan2 extends HttpServlet {
+	private static final long serialVersionUID = 1L;
+
+	@Override
+	protected void service(HttpServletRequest req, HttpServletResponse res) throws ServletException, IOException {
+		res.setContentType("text/html; charset=UTF-8");
+		PrintWriter out = res.getWriter();
+		String snum = req.getParameter("num");
+		String dir = req.getParameter("dir");
+		String dan = req.getParameter("dan");
+		
+		if (dir == null && dan == null) {
+			int num = 2;
+			if (snum != null) 
+				num = Integer.parseInt(snum);
+			gugudan01(res, num);
+		}
+		else {
+			gugudan02(res, dir);
+		}
+	}
+		
+
+	private void gugudan01(HttpServletResponse res, int num) {
+		out.println("<h2>" + num + "단입니다.</h2>");
+		for (int i = 1; i < 10; i++) {
+			out.println("<ul>" + num + "*" + i + "=" + i * num + "</ul>");
+		}
+		out.close();
+
+	}
+
+	private void gugudan02(HttpServletResponse res, String dir) {
+
+	}
+}
+
+//		
+//	}
+//	}

@@ -1,0 +1,7 @@
+package edu.pnu.servlet;
+
+public class gugudan {
+	String snum = req.getParameter("num")
+			
+			
+}

@@ -1,0 +1,30 @@
+package edu.pnu.servlet;
+
+import java.io.IOException;
+
+import jakarta.servlet.ServletException;
+import jakarta.servlet.http.HttpServlet;
+import jakarta.servlet.http.HttpServletRequest;
+import jakarta.servlet.http.HttpServletResponse;
+
+public class Gugudan extends HttpServlet {
+	@Override
+	protected void service(HttpServletRequest req, HttpServletResponse res) throws ServletException, IOException {
+		
+		
+		out.println("<head>2단입니다.</head>");
+		
+		
+		
+		String snum = req.getParameter("num");
+		int num = 2;
+		if (snum != null) {
+			num = Integer.parseInt(snum);
+			
+		for(int i = 2; i < 10; i++)
+			for(int j = 1; j < 10; j++) {
+				System.out.println(i "*" j "=" i*j);
+			}
+		}
+	}
+}

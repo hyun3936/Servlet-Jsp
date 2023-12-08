@@ -18,8 +18,8 @@ public class MyServlet02 extends HttpServlet {
 		System.out.println("MyServlet02");
 		res.setContentType("text/plain; charset=utf-8");
 		PrintWriter out = res.getWriter();
-		out.println("이것은    서블릿에서    출력하는    문서입니다.");
-		out.println("잘    보이면    성공");
+		out.println("이것은 서블릿에서 출력하는 문서입니다.");
+		out.println("잘 보이면 성공");
 		out.close();
 	}
 }

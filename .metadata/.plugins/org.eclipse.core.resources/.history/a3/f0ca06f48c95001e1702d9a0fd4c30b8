@@ -1,0 +1,50 @@
+package edu.pnu.servlet;
+
+import java.io.IOException;
+import java.io.PrintWriter;
+
+import jakarta.servlet.ServletException;
+import jakarta.servlet.annotation.WebServlet;
+import jakarta.servlet.http.HttpServlet;
+import jakarta.servlet.http.HttpServletRequest;
+import jakarta.servlet.http.HttpServletResponse;
+
+public class MyServlet04 {
+	@WebServlet("/myservlet04")
+	public class MyServlet03 extends HttpServlet {
+		private static final long serialVersionUID = 1L;
+
+		@Override
+		public void service(HttpServletRequest req, HttpServletResponse res) throws ServletException, IOException {
+			System.out.println("MyServlet04");
+			res.setContentType("text/html; charset=utf-8");
+			PrintWriter out = res.getWriter();
+			
+			out.println(
+					"<head><table><tr><td>안녕하세요</td></tr></table></head>"
+					+
+					"<body>"
+					+ "<table>"
+					+ "<tr>"
+					+ "<td> 번호 나라 수도    </td>"
+					+ "</tr>"
+					+ "<tr>"
+					+ "<td> 1 대한민국 서울    </td>"
+					+ "</tr>"
+					+ "<tr>"
+					+ "<td> 2 미국 워싱턴    </td>"
+					+ "</tr>"
+					+ "<tr>"
+					+ "<td> 3 일본 도쿄    </td>"
+					+ "</tr>"
+					+ "<tr>"
+					+ "<td> 1 중국 북경    </td>"
+					+ "</tr>"
+					+ "</table>"
+					+ "</body>"
+					+ "");
+			
+			out.close();
+		}
+	}
+}
